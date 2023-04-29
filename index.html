@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ROBOT ARM PROJECT!.</title>
+  </head>
+  <body>
+    <h1>Active items:</h1>
+
+    <h3>1) Robot shield.</h3>
+    <p>
+      I am making my own robot shield from scratch, which has proven to be quite
+      the challenge. I designed a two layer board in <b>KICAD</b>. I took my
+      time and decided to make the board a six axis shield, since it is pretty
+      difficult and quite expensive to find, plus I wanted the challenge. After
+      the design process was finished, I looked for a proper place to order the
+      board, got pretty excited, then <strong>boom!!!</strong>…. Was too
+      expensive to ship. So I decided to use my other set of skills to start
+      soldering the needed components on a prototyping board, and it came out
+      pretty well, so I finished it. Not tested it yet, I do not have the
+      stepper drivers or the stepper motors.
+    </p>
+
+    <h3>2) Robot arm body</h3>
+    <p>
+      At first I made the body 3d printable and I felt very, very accomplished I
+      had designed a good 5 axis robot arm that could be 3d printed. This
+      feeling was sweet, but it did not last long. See, I have access to a 3d
+      printer in school, but here is the catch, i will have to buy my own
+      filament. Filament in Kenya is <b>fucking EXPENSIVE!!!!</b> Like one spool
+      costs like the cost of the current robot arm. So the new robot arm is
+      much, much cheaper. It is made using acrylic since I also have access to a
+      laser cutter in school. The gearbox is also made using acrylic, and I
+      know, I know, it is not a good material for gearboxes. But, it is the
+      cheapest and I am not too rich. I have designed the robot in
+      <b>Fusion 360</b> then the <b>DXF </b>files in <b>autocad</b>. I have had
+      to do tons of research especially in the bearing sector, since it directly
+      affects the payload capability of the robot arm.
+    </p>
+
+    <h3>3) Electronics.</h3>
+    <p>
+      I will be using the nema-17 stepper motors to provide the motion for the
+      robot arm, and to control them, I chose the <b>A4988</b> stepper drivers,
+      again because of their cost. To control those, I will be using the mighty
+      <b>ESP32 DEVKIT C</b>. I chose this board because It has inbuilt WIFI and
+      Bluetooth, and that I can code with it in micropython and Arduino. The
+      whole board is powered using 12 Volts, then the control board is powered
+      using 5 Volts, which is obtained by using the <b>L7805</b> voltage
+      regulator. The rest of the electronics are just a bunch of capacitors
+      resistors, a barrel jack for power, LED and female and male connectors
+    </p>
+    <h5>COMPONENTS</h5>
+    <ul>
+      <li>stepper drivers</li>
+      <li>ESP32 DEVKIT C</li>
+      <li>L7805 voltage regulator</li>
+      <li>LED and resistors</li>
+      <li>female and male connectors</li>
+      <li>100uf capacitors</li>
+      <li>barrel jack</li>
+      <li>JST connectors</li>
+    </ul>
+  </body>
+</html>
