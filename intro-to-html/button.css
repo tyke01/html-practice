@@ -1,0 +1,45 @@
+
+      p {
+        font-family: Roboto;
+        margin-top: 0;
+      }
+      .help {
+        margin-bottom: 50px;
+        font-size: 18px;
+        background-color: rgb(36, 32, 227);
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+      }
+      .span {
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      .span:hover {
+        text-decoration: underline;
+        opacity: 0.8;
+      }
+      .span:active {
+        opacity: 0.5;
+      }
+
+      .join-button {
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        transition: box-shadow 0.5s;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .join-button:hover {
+        opacity: 0.8;
+      }
+      .join-button:active {
+        opacity: 0.6;
+      }
+ 
