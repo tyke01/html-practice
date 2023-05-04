@@ -10,72 +10,40 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      p {
-        font-family: Roboto, Arial;
-      }
-      .thumbnail {
-        width: 100%;
-        border-radius: 10px;
-      }
-      .search-bar {
-        font-family: Arial;
-        display: block;
-      }
-      .title {
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 24px;
-        width: 300px;
-        line-height: 14px;
-        margin-bottom: 10px;
-        margin-top: 0px;
-      }
-      .creator {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-      .views {
-        color: rgb(68, 65, 65);
-        font-size: 20px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-      }
-      .video-preview2,
-      .video-preview3,
-      .video-preview4,
-      .video-preview5,
-      .video-preview6,
-      .video-preview {
-        width: 100%px;
-        padding-top: 50px;
-        margin-right: 20px;
-      }
-      .profile-pic {
-        margin-top: 0px;
-      }
-      .video-description {
-        font-family: Roboto;
-      }
-      .thumbnail-row {
-        margin-bottom: 15px;
-      }
-      .info-grid {
-        display: grid;
-        grid-template-columns: 50px 1fr;
-      }
-
-      .video-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 40px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="search" />
+    <div class="header">
+      <div class="left-section">
+        <img
+          alt="no-image"
+          class="hamburger-menu"
+          src="icons/hamburger-icon.svg"
+        />
+        <img alt="no-image" class="youtube-logo" src="icons/youtube-logo.svg" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="search" />
+        <button class="search-button">
+          <img alt="no-image" src="icons/search-icon.svg" />
+        </button>
+      </div>
+      <div class="right-section">
+        <img alt="no-image" class="upload-icon" src="icons/upload-icon.svg" />
+        <img
+          alt="no-image"
+          class="notification-icon"
+          src="icons/notifications-bell-icon.svg"
+        />
+        <img
+          alt="no-image"
+          class="channel-profile"
+          src="account-pictures/channel-icon.jpg"
+        />
+      </div>
+    </div>
 
     <div class="video-grid">
       <div class="video-preview">
@@ -85,6 +53,7 @@
         <div class="info-grid">
           <div class="profile-pic">
             <img
+              alt="no-image"
               style="width: 40px; border-radius: 20px"
               src="thumbnails/owner1.png"
               alt="no picture"
