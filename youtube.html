@@ -16,8 +16,7 @@
         font-family: Roboto, Arial;
       }
       .thumbnail {
-        width: 300px;
-        display: block;
+        width: 100%;
         border-radius: 10px;
       }
       .search-bar {
@@ -49,158 +48,164 @@
       .video-preview5,
       .video-preview6,
       .video-preview {
-        width: 300px;
-        display: inline-block;
+        width: 100%px;
         padding-top: 50px;
-        margin-left: 20px;
         margin-right: 20px;
       }
       .profile-pic {
-        display: inline-block;
-        vertical-align: top;
         margin-top: 0px;
       }
       .video-description {
-        display: inline-block;
-        width: 200px;
-        margin-left: 10px;
+        font-family: Roboto;
       }
       .thumbnail-row {
         margin-bottom: 15px;
+      }
+      .info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 40px;
       }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="search" />
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/robot1.jpg" alt="no picture"/>
-      </div>
-      <div>
-        <div class="profile-pic">
-          <img
-            style="width: 40px; border-radius: 20px"
-            src="thumbnails/owner1.png"
-            alt="no picture"
-          />
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/robot1.jpg" alt="no picture" />
         </div>
+        <div class="info-grid">
+          <div class="profile-pic">
+            <img
+              style="width: 40px; border-radius: 20px"
+              src="thumbnails/owner1.png"
+              alt="no picture"
+            />
+          </div>
+          <div class="video-description">
+            <p class="title">This is my challenge</p>
+            <p class="creator">Vicky cyborg &#10003;</p>
 
-        <div class="video-description">
-          <p class="title">This is my challenge</p>
-          <p class="creator">Vicky cyborg &#10003;</p>
-
-          <p class="views">300M views &#183; 10 months ago</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="video-preview2">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/robot2.jpg" alt="no picture" />
-      </div>
-      <div>
-        <div class="profile-pic">
-          <img
-            style="width: 40px; border-radius: 20px"
-            src="thumbnails/owner2.png"
-            alt="no picture"
-          />
-        </div>
-
-        <div class="video-description">
-          <p class="title">This is my second challenge</p>
-          <p class="creator">tyke &#10003;</p>
-
-          <p class="views">40M views &#183; 6 months ago</p>
+            <p class="views">300M views &#183; 10 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview3">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/robot3.jpg" alt="no picture" />
-      </div>
-      <div>
-        <div class="profile-pic">
-          <img
-            style="width: 40px; border-radius: 20px"
-            src="thumbnails/owner3.png"
-            alt="no picture"
-          />
+      <div class="video-preview2">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/robot2.jpg" alt="no picture" />
         </div>
+        <div class="info-grid">
+          <div class="profile-pic">
+            <img
+              style="width: 40px; border-radius: 20px"
+              src="thumbnails/owner2.png"
+              alt="no picture"
+            />
+          </div>
 
-        <div class="video-description">
-          <p class="title">This is my third challenge</p>
-          <p class="creator">Vicky &#10003;</p>
+          <div class="video-description">
+            <p class="title">This is my second challenge</p>
+            <p class="creator">tyke &#10003;</p>
 
-          <p class="views">400M views &#183; 12 months ago</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="video-preview4">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/robot4.jpg" alt="no picture" />
-      </div>
-      <div>
-        <div class="profile-pic">
-          <img
-            style="width: 40px; border-radius: 20px"
-            src="thumbnails/owner4.png"
-            alt="no picture"
-          />
-        </div>
-
-        <div class="video-description">
-          <p class="title">This is my fourth challenge</p>
-          <p class="creator">gabriel &#10003;</p>
-
-          <p class="views">70M views &#183; 1 months ago</p>
+            <p class="views">40M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview5">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/robot5.jpg" alt="no picture" />
-      </div>
-      <div>
-        <div class="profile-pic">
-          <img
-            style="width: 40px; border-radius: 20px"
-            src="thumbnails/owner5.jpg"
-            alt="no picture"
-          />
+      <div class="video-preview3">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/robot3.jpg" alt="no picture" />
         </div>
+        <div class="info-grid">
+          <div class="profile-pic">
+            <img
+              style="width: 40px; border-radius: 20px"
+              src="thumbnails/owner3.png"
+              alt="no picture"
+            />
+          </div>
 
-        <div class="video-description">
-          <p class="title">This is my fifth challenge</p>
-          <p class="creator">we mzeee &#10003;</p>
+          <div class="video-description">
+            <p class="title">This is my third challenge</p>
+            <p class="creator">Vicky &#10003;</p>
 
-          <p class="views">22M views &#183; 7 months ago</p>
+            <p class="views">400M views &#183; 12 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview6">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/robot6.png" alt="no picture" />
-      </div>
-      <div>
-        <div class="profile-pic">
-          <img
-            style="width: 40px; border-radius: 20px"
-            src="thumbnails/owner6.jpg"
-            alt="no picture"
-          />
+      <div class="video-preview4">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/robot4.jpg" alt="no picture" />
         </div>
+        <div class="info-grid">
+          <div class="profile-pic">
+            <img
+              style="width: 40px; border-radius: 20px"
+              src="thumbnails/owner4.png"
+              alt="no picture"
+            />
+          </div>
 
-        <div class="video-description">
-          <p class="title">This is challenge no 6</p>
-          <p class="creator">papah &#10003;</p>
+          <div class="video-description">
+            <p class="title">This is my fourth challenge</p>
+            <p class="creator">gabriel &#10003;</p>
 
-          <p class="views">2M views &#183; 2 weeks ago</p>
+            <p class="views">70M views &#183; 1 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview5">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/robot5.jpg" alt="no picture" />
+        </div>
+        <div class="info-grid">
+          <div class="profile-pic">
+            <img
+              style="width: 40px; border-radius: 20px"
+              src="thumbnails/owner5.jpg"
+              alt="no picture"
+            />
+          </div>
+
+          <div class="video-description">
+            <p class="title">This is my fifth challenge</p>
+            <p class="creator">we mzeee &#10003;</p>
+
+            <p class="views">22M views &#183; 7 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview6">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/robot6.png" alt="no picture" />
+        </div>
+        <div class="info-grid">
+          <div class="profile-pic">
+            <img
+              style="width: 40px; border-radius: 20px"
+              src="thumbnails/owner6.jpg"
+              alt="no picture"
+            />
+          </div>
+
+          <div class="video-description">
+            <p class="title">This is challenge no 6</p>
+            <p class="creator">papah &#10003;</p>
+
+            <p class="views">2M views &#183; 2 weeks ago</p>
+          </div>
         </div>
       </div>
     </div>
