@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/side-bar.css" />
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="left-section">
         <img
           alt="no-image"
@@ -29,6 +30,7 @@
         <input class="search-bar" type="text" placeholder="search" />
         <button class="search-button">
           <img alt="no-image" src="icons/search-icon.svg" />
+          <div class="search-tooltip">search</div>
         </button>
         <button class="voice-button">
           <img
@@ -36,161 +38,212 @@
             class="voice-search"
             src="icons/voice-search-icon.svg"
           />
+          <div class="search-tooltip">search with your voice</div>
         </button>
       </div>
       <div class="right-section">
-        <button class="upload">
-          <img alt="no-image" class="upload-icon" src="icons/upload-icon.svg" />
-        </button>
-        <button class="notification-bar">
-          <img
-            alt="no-image"
-            class="notification-icon"
-            src="icons/notifications-bell-icon.svg"
-          />
-        </button>
-        <button class="channel-profile">
-          <img
-            alt="no-image"
-            class="channel-picture"
-            src="account-pictures/channel-picture.png"
-          />
-        </button>
-      </div>
-    </div>
-
-    <div class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/robot1.jpg" alt="no picture" />
-        </div>
-        <div class="info-grid">
-          <div class="profile-pic">
+        <div class="upload-icon-container">
+          <button class="upload">
             <img
               alt="no-image"
-              style="width: 40px; border-radius: 20px"
-              src="thumbnails/owner1.png"
-              alt="no picture"
+              class="upload-icon"
+              src="icons/upload-icon.svg"
             />
-          </div>
-          <div class="video-description">
-            <p class="title">This is my challenge</p>
-            <p class="creator">Vicky cyborg &#10003;</p>
-
-            <p class="views">300M views &#183; 10 months ago</p>
-          </div>
+          </button>
+          <div class="search-tooltip">create</div>
         </div>
-      </div>
 
-      <div class="video-preview2">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/robot2.jpg" alt="no picture" />
-        </div>
-        <div class="info-grid">
-          <div class="profile-pic">
+        <div class="notifications">
+          <button class="notification-bar">
             <img
-              style="width: 40px; border-radius: 20px"
-              src="thumbnails/owner2.png"
-              alt="no picture"
+              alt="no-image"
+              class="notification-icon"
+              src="icons/notifications-bell-icon.svg"
             />
-          </div>
-
-          <div class="video-description">
-            <p class="title">This is my second challenge</p>
-            <p class="creator">tyke &#10003;</p>
-
-            <p class="views">40M views &#183; 6 months ago</p>
-          </div>
+          </button>
+          <div class="notification-count">3</div>
+          <div class="search-tooltip">notifications</div>
         </div>
-      </div>
-
-      <div class="video-preview3">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/robot3.jpg" alt="no picture" />
-        </div>
-        <div class="info-grid">
-          <div class="profile-pic">
+        <div class="channel-profile-container">
+          <button class="channel-profile">
             <img
-              style="width: 40px; border-radius: 20px"
-              src="thumbnails/owner3.png"
-              alt="no picture"
+              alt="no-image"
+              class="channel-picture"
+              src="account-pictures/channel-picture.png"
             />
-          </div>
-
-          <div class="video-description">
-            <p class="title">This is my third challenge</p>
-            <p class="creator">Vicky &#10003;</p>
-
-            <p class="views">400M views &#183; 12 months ago</p>
-          </div>
+          </button>
+          <div class="search-tooltip">profile</div>
         </div>
       </div>
+    </header>
 
-      <div class="video-preview4">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/robot4.jpg" alt="no picture" />
-        </div>
-        <div class="info-grid">
-          <div class="profile-pic">
-            <img
-              style="width: 40px; border-radius: 20px"
-              src="thumbnails/owner4.png"
-              alt="no picture"
-            />
-          </div>
-
-          <div class="video-description">
-            <p class="title">This is my fourth challenge</p>
-            <p class="creator">gabriel &#10003;</p>
-
-            <p class="views">70M views &#183; 1 months ago</p>
-          </div>
-        </div>
+    <nav class="side-bar">
+      <div class="sidebar-link">
+        <img src="navbar-icons/home-icon.svg" alt="no-image" />
+        <div>home</div>
+        <div class="search-tooltip">home</div>
       </div>
-
-      <div class="video-preview5">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/robot5.jpg" alt="no picture" />
-        </div>
-        <div class="info-grid">
-          <div class="profile-pic">
-            <img
-              style="width: 40px; border-radius: 20px"
-              src="thumbnails/owner5.jpg"
-              alt="no picture"
-            />
-          </div>
-
-          <div class="video-description">
-            <p class="title">This is my fifth challenge</p>
-            <p class="creator">we mzeee &#10003;</p>
-
-            <p class="views">22M views &#183; 7 months ago</p>
-          </div>
-        </div>
+      <div class="sidebar-link">
+        <img src="navbar-icons/explore-icon.svg" alt="no-image" />
+        <div>explore</div>
+        <div class="search-tooltip">explore</div>
       </div>
-
-      <div class="video-preview6">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/robot6.png" alt="no picture" />
-        </div>
-        <div class="info-grid">
-          <div class="profile-pic">
-            <img
-              style="width: 40px; border-radius: 20px"
-              src="thumbnails/owner6.jpg"
-              alt="no picture"
-            />
-          </div>
-
-          <div class="video-description">
-            <p class="title">This is challenge no 6</p>
-            <p class="creator">papah &#10003;</p>
-
-            <p class="views">2M views &#183; 2 weeks ago</p>
-          </div>
-        </div>
+      <div class="sidebar-link">
+        <img src="navbar-icons/subscriptions-icon.svg" alt="no-image" />
+        <div>subsctiptions</div>
+        <div class="search-tooltip">subsctiptions</div>
       </div>
-    </div>
+      <div class="sidebar-link">
+        <img src="navbar-icons/library-icon.svg" alt="no-image" />
+        <div>library</div>
+        <div class="search-tooltip">library</div>
+      </div>
+    </nav>
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/robot1.jpg" alt="no picture" />
+            <div class="video-time">15:00</div>
+          </div>
+  
+          <div class="info-grid">
+            <div class="profile-pic">
+              <img
+                alt="no-image"
+                style="width: 40px; border-radius: 20px"
+                src="thumbnails/owner1.png"
+                alt="no picture"
+              />
+            </div>
+            <div class="video-description">
+              <p class="title">This is my challenge</p>
+              <p class="creator">Vicky cyborg &#10003;</p>
+  
+              <p class="views">300M views &#183; 10 months ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview2">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/robot2.jpg" alt="no picture" />
+            <div class="video-time">20:00</div>
+          </div>
+          <div class="info-grid">
+            <div class="profile-pic">
+              <img
+                style="width: 40px; border-radius: 20px"
+                src="thumbnails/owner2.png"
+                alt="no picture"
+              />
+            </div>
+  
+            <div class="video-description">
+              <p class="title">This is my second challenge</p>
+              <p class="creator">tyke &#10003;</p>
+  
+              <p class="views">40M views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview3">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/robot3.jpg" alt="no picture" />
+            <div class="video-time">43:30</div>
+          </div>
+          <div class="info-grid">
+            <div class="profile-pic">
+              <img
+                style="width: 40px; border-radius: 20px"
+                src="thumbnails/owner3.png"
+                alt="no picture"
+              />
+            </div>
+  
+            <div class="video-description">
+              <p class="title">This is my third challenge</p>
+              <p class="creator">Vicky &#10003;</p>
+  
+              <p class="views">400M views &#183; 12 months ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview4">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/robot4.jpg" alt="no picture" />
+            <div class="video-time">20:30</div>
+          </div>
+          <div class="info-grid">
+            <div class="profile-pic">
+              <img
+                style="width: 40px; border-radius: 20px"
+                src="thumbnails/owner4.png"
+                alt="no picture"
+              />
+            </div>
+  
+            <div class="video-description">
+              <p class="title">This is my fourth challenge</p>
+              <p class="creator">gabriel &#10003;</p>
+  
+              <p class="views">70M views &#183; 1 months ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview5">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/robot5.jpg" alt="no picture" />
+            <div class="video-time">33:00</div>
+          </div>
+          <div class="info-grid">
+            <div class="profile-pic">
+              <img
+                style="width: 40px; border-radius: 20px"
+                src="thumbnails/owner5.jpg"
+                alt="no picture"
+              />
+            </div>
+  
+            <div class="video-description">
+              <p class="title">This is my fifth challenge</p>
+              <p class="creator">we mzeee &#10003;</p>
+  
+              <p class="views">22M views &#183; 7 months ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview6">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/robot6.png" alt="no picture" />
+            <div class="video-time">12:30</div>
+          </div>
+          <div class="info-grid">
+            <div class="profile-pic">
+              <img
+                style="width: 40px; border-radius: 20px"
+                src="thumbnails/owner6.jpg"
+                alt="no picture"
+              />
+            </div>
+  
+            <div class="video-description">
+              <p class="title">This is challenge no 6</p>
+              <p class="creator">papah &#10003;</p>
+  
+              <p class="views">2M views &#183; 2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
   </body>
 </html>
+
+<!-- put position absolute inside position relative -->
+<!-- this is my main practice project -->
